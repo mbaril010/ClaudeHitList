@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-bg: #08080f;
+  --color-bg-card: #0a0a12;
+  --color-bg-elevated: #0a0a14;
+  --color-bg-surface: #0d0d1a;
+
+  --color-danger: #ff0040;
+  --color-success: #00ff9f;
+  --color-warning: #ff6600;
+  --color-caution: #ffaa00;
+
+  --color-text-primary: #e0e0e0;
+  --color-text-secondary: #aaaaaa;
+  --color-text-muted: #666666;
+  --color-text-faint: #555555;
+  --color-text-ghost: #444444;
+  --color-text-dim: #333333;
+  --color-text-subtle: #888888;
+
+  --color-border-faint: rgba(255, 255, 255, 0.03);
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-muted: rgba(255, 255, 255, 0.08);
+  --color-border-light: rgba(255, 255, 255, 0.1);
+
+  /* Fonts */
+  --font-mono: var(--font-ibm-plex-mono), "IBM Plex Mono", ui-monospace,
+    monospace;
+  --font-sans: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), "Space Grotesk", system-ui,
+    sans-serif;
+
+  /* Animations */
+  --animate-blink: blink 1s step-end infinite;
+  --animate-scanline: scanline 8s linear infinite;
+  --animate-pulse-red: pulse-red 2s ease-in-out infinite;
+  --animate-fade-in-up: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-alert-pulse: alert-pulse 2s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Keyframe animations */
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 
+@keyframes scanline {
+  0% {
+    top: -2px;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+@keyframes pulse-red {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 64, 0.27);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 0, 64, 0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes alert-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 64, 0.27);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 64, 0.27);
+  }
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 64, 0.25);
 }

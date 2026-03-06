@@ -26,7 +26,12 @@ export function Hero({ onAlertClick }: { onAlertClick: () => void }) {
       <div className="flex items-center gap-3 mb-5">
         <div className="w-2 h-2 rounded-full bg-danger animate-pulse-red" />
         <span className="font-mono text-xs text-danger tracking-[0.15em] uppercase">
-          Live Tracking @claudeai — Updated Feb 24, 2025
+          Live Tracking @claudeai — Updated{" "}
+          {new Date().toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+          })}
         </span>
       </div>
 

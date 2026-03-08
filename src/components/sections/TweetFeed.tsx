@@ -41,7 +41,7 @@ export function TweetFeed({ stockData }: { stockData: StockData }) {
                   className="bg-transparent cursor-pointer py-1 px-3 font-mono text-[10px] tracking-[0.08em] transition-all hover:text-[#999] hover:border-white/20"
                   style={{
                     border: `1px solid ${active ? s.border : "rgba(255,255,255,0.06)"}`,
-                    color: active ? s.color : "#777",
+                    color: active ? s.color : "#888",
                     background: active ? s.bg : "transparent",
                   }}
                 >

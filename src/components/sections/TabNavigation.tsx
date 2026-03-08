@@ -35,7 +35,7 @@ export function TabNavigation({
                 ? "2px solid #ff0040"
                 : "2px solid transparent",
               padding: "12px 20px",
-              color: isActive ? "#ff0040" : "#444",
+              color: isActive ? "#ff0040" : "#888",
             }}
           >
             {tab.label}
@@ -47,7 +47,7 @@ export function TabNavigation({
                 background: isActive
                   ? "rgba(255, 0, 64, 0.13)"
                   : "rgba(255, 255, 255, 0.03)",
-                color: isActive ? "#ff0040" : "#555",
+                color: isActive ? "#ff0040" : "#777",
               }}
             >
               {tab.count}

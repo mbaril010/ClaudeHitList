@@ -14,11 +14,11 @@
 
   --color-text-primary: #e0e0e0;
   --color-text-secondary: #aaaaaa;
-  --color-text-muted: #666666;
-  --color-text-faint: #555555;
-  --color-text-ghost: #444444;
-  --color-text-dim: #333333;
-  --color-text-subtle: #888888;
+  --color-text-muted: #888888;
+  --color-text-faint: #777777;
+  --color-text-ghost: #666666;
+  --color-text-dim: #555555;
+  --color-text-subtle: #999999;
 
   --color-border-faint: rgba(255, 255, 255, 0.03);
   --color-border-subtle: rgba(255, 255, 255, 0.06);

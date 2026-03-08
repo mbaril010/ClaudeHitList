@@ -2,26 +2,70 @@ import type { Tweet } from "@/types";
 
 export const TWEETS: Tweet[] = [
   {
+    id: 17,
+    date: "Mar 6, 2025",
+    time: "2d ago",
+    text: "Introducing the Claude Marketplace, a way for enterprises to simplify their procurement of AI tools. Now in limited preview.",
+    threatLevel: "HIGH",
+    impactAnalysis:
+      "PLATFORM LOCK-IN. Enterprise procurement marketplace bundles Claude-powered solutions from GitLab, Snowflake, Replit, Lovable into a single spend commitment. Creates an app-store moat that makes switching costs prohibitive. Traditional enterprise software sales channels disrupted.",
+    targets: ["CRM", "NOW", "TEAM", "HUBS"],
+    isNew: true,
+  },
+  {
+    id: 18,
+    date: "Mar 2, 2025",
+    time: "6d ago",
+    text: "Memory is now available on the free plan. We've also made it easier to import saved memories into Claude. You can export them whenever you want.",
+    threatLevel: "HIGH",
+    impactAnalysis:
+      "FREE PERSISTENT MEMORY. Claude now remembers context across sessions for every user — no subscription required. Deepens user lock-in and erodes the value of CRM, note-taking, and knowledge management tools. 10M+ views on this announcement alone.",
+    targets: ["CRM", "TEAM", "HUBS"],
+    isNew: true,
+  },
+  {
+    id: 19,
+    date: "Feb 26, 2025",
+    time: "10d ago",
+    text: "Connectors are now available on the free plan. Choose from 150+ connectors across coding, data, design, finance, sales, and more.",
+    threatLevel: "HIGH",
+    impactAnalysis:
+      "150+ INTEGRATIONS FREE. Claude can now pull data from virtually any tool at zero cost. iPaaS and integration platforms face existential threat — why pay for Zapier or Workato when Claude connects everything natively?",
+    targets: ["ZS", "WDAY", "TEAM", "CRM"],
+    isNew: false,
+  },
+  {
+    id: 14,
+    date: "Feb 25, 2025",
+    time: "11d ago",
+    text: "New in Cowork: scheduled tasks. Claude can now complete recurring tasks at specific times automatically: a morning brief, weekly spreadsheet updates, Friday team presentations.",
+    threatLevel: "CRITICAL",
+    impactAnalysis:
+      "AUTONOMOUS SCHEDULING. Claude now runs tasks without human initiation. Replaces entire categories of administrative and operational roles — executive assistants, report generators, data pipeline operators. Recurring automation is the kill shot for task management SaaS.",
+    targets: ["MNDY", "ASAN", "TEAM", "NOW"],
+    isNew: false,
+  },
+  {
     id: 1,
     date: "Feb 24, 2025",
-    time: "8h ago",
+    time: "12d ago",
     text: "Introducing Cowork and plugin updates that help enterprises customize Claude for better collaboration with every team.",
     threatLevel: "HIGH",
     impactAnalysis:
       "Enterprise SaaS disruption — targets Slack, Monday.com, Notion. Plugin ecosystem creates lock-in that displaces vertical SaaS tools.",
     targets: ["TEAM", "MNDY", "CRM"],
-    isNew: true,
+    isNew: false,
   },
   {
     id: 2,
     date: "Feb 24, 2025",
-    time: "1h ago",
+    time: "12d ago",
     text: "New in Claude Code: Remote Control. Kick off a task in your terminal and pick it up from your phone while you take a walk or join a meeting.",
     threatLevel: "MODERATE",
     impactAnalysis:
       "Incremental developer tool improvement. Extends coding agent accessibility but limited direct market impact.",
     targets: ["MSFT", "GTLB"],
-    isNew: true,
+    isNew: false,
   },
   {
     id: 3,
@@ -70,9 +114,22 @@ export const TWEETS: Tweet[] = [
     isNew: false,
   },
   {
+    id: 15,
+    date: "Feb 17, 2025",
+    time: "19d ago",
+    text: "This is Claude Sonnet 4.6: our most capable Sonnet model yet. It's a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design. It also features a 1M token context window in beta.",
+    threatLevel: "CRITICAL",
+    impactAnalysis:
+      "SECOND FOUNDATION MODEL IN 12 DAYS. Sonnet 4.6 now default on free tier — puts Opus-class capabilities in everyone's hands. Computer use at human level. Every knowledge worker vertical exposed simultaneously. Consulting, DevOps, design all under fire.",
+    targets: ["ACN", "INFY", "WIT", "IGV", "EPAM"],
+    isNew: false,
+    confirmed: true,
+    marketResult: "Software selloff extended. IGV another -4% on the week.",
+  },
+  {
     id: 7,
     date: "Feb 11, 2025",
-    time: "13d ago",
+    time: "25d ago",
     text: "We're bringing some of Claude's most-used features to the free plan. File creation, connectors, and skills are all now available without a subscription.",
     threatLevel: "HIGH",
     impactAnalysis:
@@ -105,9 +162,20 @@ export const TWEETS: Tweet[] = [
     marketResult: "IGV -30%. Worst quarter for software since 2008.",
   },
   {
+    id: 16,
+    date: "Feb 4, 2025",
+    time: "32d ago",
+    text: "Ads are coming to AI. But not to Claude. Keep thinking.",
+    threatLevel: "MODERATE",
+    impactAnalysis:
+      "Strategic positioning. While competitors monetize via ads, Claude signals premium-only model. Long-term threat to ad-supported AI plays. Subtle dig at Google/Meta AI strategies.",
+    targets: ["GOOG", "META"],
+    isNew: false,
+  },
+  {
     id: 10,
     date: "Jan 30, 2025",
-    time: "25d ago",
+    time: "37d ago",
     text: "Cowork now supports plugins. Bundle skills, connectors, slash commands, and sub-agents together to turn Claude into a specialist for your role, team, and company.",
     threatLevel: "HIGH",
     impactAnalysis:
